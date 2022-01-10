@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Rubik:wght@300;400&display=swap');
+/* 
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+*/
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(253,77,90);
+    background: radial-gradient(circle, rgba(253,77,90,1) 0%, rgba(233,218,218,1) 100%) no-repeat;
+    transition-duration: 1000ms;
+}
+
+h1
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #282929;
+    padding: 2rem 4rem;
+    text-shadow: 0px 7px 9px rgba(0,0,0,0.27);
+    transition-duration: 1000ms;
+}
+
+.container
+{
+    width: 50rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: rgba(186, 12, 58, 0.611) 0px 13px 27px -9px, rgba(0, 0, 0, 0.542) 0px 8px 16px -9px;
+    transition-duration: 1000ms;
+}
+
+.container form
+{
+    margin: 0  4rem;
+    padding-bottom: 35px;
+    font-family: 'Rubik', sans-serif;
+    transition-duration: 1000ms;
+}
+
+.container .person-name
+{
+    display: flex;
+    transition-duration: 1000ms;
+}
+
+.container .person-contact
+{
+    display: flex;
+    transition-duration: 1000ms;
+}
+
+.container .form-group
+{
+    width: calc(100% / 2);
+    margin: 0 0 1rem 0 ;
+    text-align: left;
+    transition-duration: 1000ms;
+}
+
+.container .gap
+{
+    margin-right: 20px;
+    transition-duration: 1000ms;
+}
+
+form .form-group label
+{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #282929;
+    transition-duration: 1000ms;
+}
+
+form .form-group input
+{
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 400;
+    height: 40px;
+    padding: 9px 5px;
+    color: #282929;
+    margin-top: 5px;
+    transition-duration: 1000ms;
+}
+
+.container #message
+{
+    width: calc(100% + 100%);
+    resize: vertical;
+    height: 75px;
+    font-size: 1.4rem;
+    padding: 9px 5px;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 5px;
+    transition-duration: 1000ms;
+}
+
+.container #submit-button
+{
+    font-size: 1.2rem;
+    padding: .5rem 2rem;
+    background-color: #fd4d5a;
+    color: #ffffff;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: rgba(197, 27, 27, 0.3) 0px 19px 38px, rgba(199, 31, 31, 0.22) 0px 15px 12px;
+    transition-duration: 1000ms;
+}
+
+.container #submit-button:hover
+{
+    background-color: #353d4fd4;
+}
+
+@media screen and (max-width: 880px)
+{
+    h1
+    {
+        font-size: 2rem;
+        padding: 1rem 2rem;
+    }
+
+    .container
+    {
+        width: 22rem;
+    }
+
+    .container form
+    {
+        margin: 0  1rem;
+        padding-bottom: 35px;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    .container .person-name
+    {
+        display: block;
+    }
+
+.container .person-contact
+    {
+        display: block;
+    }
+
+    .container .form-group
+    {
+        width: calc(100%);
+    }
+
+    form .form-group label
+    {
+        font-size: 1rem;
+    }
+
+    form .form-group input
+    {
+        font-size: 1.2rem;
+    }
+
+    .container #message
+    {
+        width: calc(100%);
+        font-size: 1.2rem;
+    }
+
+    .container #submit-button
+    {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
