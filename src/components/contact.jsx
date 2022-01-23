@@ -2,11 +2,27 @@ import React from "react";
 
 function Contact()
 {
+    const handleSubmit = (event) => {
+        
+        const first = event.target.firstName.value;
+        const last = event.target.lastName.value;
+        const phone = event.target.phone.value;
+        const email = event.target.email.value;
+        const message = event.target.message.value;
+
+        console.log("First Name : " + first);
+        console.log("Last Name : " + last);
+        console.log("Phone : " + phone);
+        console.log("Gmail : " + email);
+        console.log("Message : " + message);
+
+        event.preventDefault();
+    }
     return(
         <div className="container">
             <h1>Contact Us</h1>
             
-            <form action="">
+            <form action="" id="form" onSubmit={handleSubmit} >
                 <div className="person-name">
                     <div className="form-group gap">
                         <label htmlFor="firstName">First Name<br /></label>
@@ -34,7 +50,7 @@ function Contact()
                     <textarea type="text" name="message" id="message"  />
                 </div>
 
-                <button type="submit" id="submit-button">Submit</button>
+                <button type="submit" id="submit-button" >Submit</button>
                 
             </form>
         </div>
